@@ -1,5 +1,5 @@
 import React from "react";
-import "./";
+import "./NewCollections.css";
 import new_collection from "../assets/new_collections";
 import { Item } from "../item/item";
 export const Newcollections = () => {
