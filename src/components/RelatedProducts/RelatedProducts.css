@@ -21,3 +21,28 @@
   display: flex;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  .relatedproducts {
+    margin: 20px;
+    height: auto;
+  }
+
+  .relatedproducts h1 {
+    font-size: 32px;
+  }
+
+  .relatedproducts hr {
+    width: 150px;
+  }
+
+  .relatedproducts-item {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .relatedproducts-item img {
+    width: 100%;
+    height: auto;
+  }
+}

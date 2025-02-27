@@ -3,6 +3,8 @@
 }
 .descriptionbox-navigator {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .descriptionbox-nav-box {
   display: flex;
@@ -13,6 +15,7 @@
   width: 171px;
   height: 70px;
   border: 1px solid #d0d0d0;
+  margin-bottom: 10px;
 }
 .descriptionbox-nav-box.fade {
   background: #fbfbfb;
@@ -25,4 +28,29 @@
   border: 1px solid #d0d0d0;
   padding: 48px;
   padding-bottom: 70px;
+}
+@media (max-width: 768px) {
+  .descriptionbox {
+    margin: 60px 20px;
+  }
+
+  .descriptionbox-navigator {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .descriptionbox-nav-box {
+    width: auto;
+    height: 50px;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+  }
+
+  .descriptionbox-description {
+    padding: 30px;
+    padding-bottom: 40px;
+  }
 }

@@ -22,4 +22,23 @@
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .new-collections {
+    padding: 0px;
+  }
+  .collections {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .collections > div {
+    width: 40%;
+    box-sizing: border-box;
+  }
 }

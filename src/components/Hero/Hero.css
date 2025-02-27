@@ -32,3 +32,36 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .Hero {
+    flex-direction: column; /* Keep left-right layout */
+    align-items: center; /* Vertically center content */
+  }
+
+  .hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    align-items: center; /* Align to the left */
+    padding-left: 0;
+    gap: 20px;
+    line-height: 1.1;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  .hero-left h2 {
+    font-size: 70px; /* Adjust font size for mobile */
+    padding-bottom: 200px;
+  }
+
+  .hero-left p {
+    font-size: 70px; /* Adjust font size for mobile */
+    padding-bottom: 10px; /* Adjust padding */
+  }
+  .hero-right {
+    display: none;
+  }
+}
